@@ -6,24 +6,24 @@ export default function Offers() {
       id: 1,
       title: 'ORGANIC SOLUTION',
       subtitle: 'Get the skincare',
-      image: '/product-1.png',
+      image: '/product-1.jpg',
     },
     {
       id: 2,
       title: 'TREATMENT',
       subtitle: 'Suit their body',
-      image: '/product-2.png',
+      image: '/product-2.jpg',
     },
     {
       id: 3,
       title: 'EXCELLENT OFFERS',
       subtitle: 'Get that deals',
-      image: '/product-3.png',
+      image: '/product-3.jpg',
     },
   ];
 
   return (
-    <section className="bg-[#1E1E1E] py-16 md:py-20">
+    <section className="bg-[#5D4B41] py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Title */}
         <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-12 md:mb-16 tracking-wider">
