@@ -18,10 +18,7 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Promotional Banner */}
-      <div className="bg-[#d4a89a] text-white text-center py-2 px-4 text-xs md:text-sm">
-        Choose a beauty gift, FREE when you spend $69.00. See Details
-      </div>
+      
       
       <nav className="bg-[#F1DECD] px-4 py-3 md:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -31,22 +28,22 @@ export default function Navbar() {
               <span className="font-playfair text-3xl md:text-4xl text-[#4a3a2a] italic font-light" style={{ fontFamily: 'Brush Script MT, cursive' }}>
                 Lumi
               </span>
-              <span className="text-[9px] md:text-[10px] font-light tracking-[0.2em] text-[#5a4a3a] uppercase mt-[-4px]">GLASS SKIN EFFECT</span>
+             
             </Link>
           </div>
 
-        {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center space-x-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-xs font-medium text-[#5a4a3a] hover:text-[#8a6a4a] transition-colors tracking-wide"
-            >
-              {link.name}
-            </Link>
-          ))}
-        </div>
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center space-x-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-xs font-medium text-[#5a4a3a] hover:text-[#8a6a4a] transition-colors tracking-wide"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
 
         {/* Icons */}
         <div className="hidden lg:flex items-center space-x-6">
