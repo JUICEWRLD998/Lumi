@@ -46,7 +46,7 @@ export default function Navbar() {
           </div>
 
         {/* Icons */}
-        <div className="hidden lg:flex items-center space-x-6">
+        <div className="hidden lg:flex items-center space-x-5">
           {/* Search Icon */}
           <button className="text-[#5a4a3a] hover:text-[#8a6a4a] transition-colors">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

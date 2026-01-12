@@ -24,19 +24,14 @@ export default function Experts() {
 
           {/* Right Content */}
           <div className="space-y-5 md:space-y-6">
-           
-
-            
-
             {/* Description */}
             <p className="font-inter text-sm md:text-base text-[#5a4a3a] leading-relaxed">
               Our certified skincare experts are dedicated to providing personalized treatments tailored to your unique skin type and concerns. With years of experience and a commitment to using only organic, natural ingredients, we ensure every treatment is safe, effective, and transformative. From acne solutions to anti-aging therapies, we guide you through every step of your skincare journey with professional expertise and genuine care.
             </p>
-
-          
           </div>
         </div>
       </div>
     </section>
+
   );
 }

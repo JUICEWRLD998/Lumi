@@ -40,7 +40,7 @@ export default function Hero() {
               />
               <button
                 type="submit"
-                className="px-7 py-2.5 rounded-full bg-[#d4a89a] text-white text-sm font-medium hover:bg-[#c49888] transition-colors"
+                className="px-7 py-2.5 rounded-full bg-[#5a4a3a] text-white text-sm font-medium hover:bg-[#8a6a4a] transition-colors"
               >
                 Get Noticed
               </button>
