@@ -24,7 +24,7 @@ export default function AboutUs() {
             </h2>
             
             <p className="font-inter text-sm md:text-base text-[#5a4a3a] leading-relaxed">
-              Welcome to Glass Skin Effect, Home-based organic skin care manufacturer, bringing you a range of high-quality skin care made from 100% organic ingredients. We believe in the power of nature to transform your skin, which is why all our products are lovingly crafted using only natural ingredients. With absolutely no added harmful chemical and parabens. We are committed to providing you with skincare that not only enhances your natural beauty, but also promotes overall well-being.
+              Welcome to Lumi, Home-based organic skin care manufacturer, bringing you a range of high-quality skin care made from 100% organic ingredients. We believe in the power of nature to transform your skin, which is why all our products are lovingly crafted using only natural ingredients. With absolutely no added harmful chemical and parabens. We are committed to providing you with skincare that not only enhances your natural beauty, but also promotes overall well-being.
             </p>
 
             <button className="px-8 py-2.5 rounded-full bg-[#d4a89a] text-white text-sm font-medium hover:bg-[#c49888] transition-colors">

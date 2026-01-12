@@ -27,7 +27,7 @@ export default function Offers() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Title */}
         <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-12 md:mb-16 tracking-wider">
-          WHAT WE OFFERS
+          WHAT WE OFFER
         </h2>
 
         {/* Offers Grid */}
