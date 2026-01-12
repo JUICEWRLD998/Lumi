@@ -24,7 +24,7 @@ export default function Application() {
                             {/* Thumbnail Image */}
                             <div className="absolute inset-0 bg-gradient-to-br from-[#F8ECE2] to-[#E8D4C4] flex items-center justify-center">
                                 <img
-                                    src="/how-it-works.jpg"
+                                    src="/expert-2.jpg"
                                     alt="How it works"
                                     className="w-full h-full object-cover"
                                 />
