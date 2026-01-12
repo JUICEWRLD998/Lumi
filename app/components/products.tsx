@@ -27,7 +27,33 @@ export default function Products() {
             title:'Herbal night cream',
             price: '$50',
             image: '/product-sec-4.jpg',
-        }
+        },
+        {
+            id: 5,
+            title:'The ordinary serum',
+            price: '$35',
+            image: '/product-sec-5.jpg',
+
+        },
+        {
+            id: 6,
+            title:'Ritual face wash',
+            price: '$23',
+            image: '/product-sec-6.jpg',
+
+        },
+        {
+            id: 7,
+            title:'Curology moisturizer',
+            price: '$25',
+            image: '/product-sec-7.jpg',
+        },
+        {
+            id: 8,
+            title:'Golden night cream',
+            price: '$100',
+            image: '/product-sec-8.jpg',
+        },
     ];
 
     return (
@@ -69,14 +95,7 @@ export default function Products() {
                         </div>
                     ))}
                 </div>
-
-                {/* View All Products Button */}
-                <div className="flex justify-center mt-8 md:mt-12">
-                    <button className="border-2 border-[#8B6F47] text-[#ffffff] hover:bg-[#8B6F47] hover:text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-semibold transition-colors duration-300">
-                        ALL PRODUCTS
-                    </button>
                 </div>
-            </div>
         </section>
     )
 }
