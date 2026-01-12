@@ -6,8 +6,8 @@ export default function AboutUs() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Image */}
-          <div className="relative h-[400px] md:h-[450px] w-full">
-            <div className="relative w-full h-full rounded-[50%] border-4 border-[#d4a89a] overflow-hidden">
+          <div className="flex justify-center md:justify-start">
+            <div className="relative w-[300px] h-[300px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden border-4 border-[#d4a89a]">
               <Image
                 src="/skincare2.png"
                 alt="Woman applying skincare product"
