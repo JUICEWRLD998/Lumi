@@ -17,23 +17,31 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-[#F1DECD] px-6 py-4 md:px-12 border-b border-[#e0c9b5]">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Logo */}
-        <div className="flex items-center">
-          <Link href="/" className="font-playfair text-2xl md:text-3xl font-semibold text-[#5a4a3a] italic">
-            lumi
-            <span className="block text-xs md:text-sm font-light tracking-wider not-italic">GLASS SKIN EFFECT</span>
-          </Link>
-        </div>
+    <>
+      {/* Promotional Banner */}
+      <div className="bg-[#d4a89a] text-white text-center py-2 px-4 text-xs md:text-sm">
+        Choose a beauty gift, FREE when you spend $69.00. See Details
+      </div>
+      
+      <nav className="bg-[#F1DECD] px-4 py-3 md:px-8">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center">
+            <Link href="/" className="flex flex-col">
+              <span className="font-playfair text-3xl md:text-4xl text-[#4a3a2a] italic font-light" style={{ fontFamily: 'Brush Script MT, cursive' }}>
+                Lumi
+              </span>
+              <span className="text-[9px] md:text-[10px] font-light tracking-[0.2em] text-[#5a4a3a] uppercase mt-[-4px]">GLASS SKIN EFFECT</span>
+            </Link>
+          </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center space-x-6">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-[#5a4a3a] hover:text-[#8a6a4a] transition-colors"
+              className="text-xs font-medium text-[#5a4a3a] hover:text-[#8a6a4a] transition-colors tracking-wide"
             >
               {link.name}
             </Link>
@@ -118,5 +126,6 @@ export default function Navbar() {
         </div>
       )}
     </nav>
+    </>
   );
 }
