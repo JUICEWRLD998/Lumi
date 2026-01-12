@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-8 md:py-12">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
-          <div className="space-y-5 md:space-y-6">
+          <div className="space-y-5 md:space-y-6 order-2 md:order-1">
             <h1 className="font-playfair text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-[#3a2a1a] leading-tight">
               HOME BASED
               <br />
@@ -48,12 +48,12 @@ export default function Hero() {
           </div>
 
           {/* Right Image */}
-          <div className="relative h-[400px] md:h-[450px] lg:h-[500px] w-full">
+          <div className="relative h-[400px] md:h-[450px] lg:h-[500px] w-full order-1 md:order-2">
             <Image
               src="/skincare.png"
               alt="Woman with beautiful skin"
               fill
-              className="object-contain object-center"
+              className="object-cover object-center rounded-[40%] md:rounded-none md:object-contain"
               priority
             />
           </div>

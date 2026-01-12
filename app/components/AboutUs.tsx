@@ -7,12 +7,14 @@ export default function AboutUs() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Image */}
           <div className="relative h-[400px] md:h-[450px] w-full">
-            <Image
-              src="/skincare2.png"
-              alt="Woman applying skincare product"
-              fill
-              className="object-contain object-center"
-            />
+            <div className="relative w-full h-full rounded-[50%] border-4 border-[#d4a89a] overflow-hidden">
+              <Image
+                src="/skincare2.png"
+                alt="Woman applying skincare product"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
           </div>
 
           {/* Right Content */}
