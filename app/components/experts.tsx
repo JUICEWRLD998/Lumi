@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Experts() {
   return (
-    <section className="bg-white py-12 md:py-16">
+    <section className="bg-[#F8ECE2] py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Title */}
         <h2 className="font-playfair text-2xl md:text-3xl lg:text-4xl font-bold text-[#3a2a1a] text-center mb-12 md:mb-16 uppercase tracking-wide">
