@@ -6,7 +6,7 @@ import Experts from './components/experts';
 import Products from './components/products'; 
 import Application from './components/application';
 import Testimonials from './components/testimonials';
-
+import Blog from './components/blog';
 
 export default function Home() {
   return (
@@ -19,6 +19,7 @@ export default function Home() {
       <Products />
       <Application />
       <Testimonials />
+      <Blog />
     </main>
   );
 }

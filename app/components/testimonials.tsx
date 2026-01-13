@@ -6,36 +6,37 @@ import { motion } from "framer-motion";
 const reviews = [
   {
     quote:
-      "The flavors are absolutely incredible. Every bite feels like a celebration of authentic taste and quality.",
+      "The results are absolutely incredible. Every application feels like a celebration of glowing, radiant skin.",
     author: "Sarah Chen",
-    role: "Food Blogger",
-    avatar: "/images/reviews/review1.jpg",
+    role: "Skincare Enthusiast",
+    avatar: "/testimonials-1.jpg",
     rating: 5,
   },
   {
     quote:
-      "Hotbite has become my go-to spot. The grilled kebabs are phenomenal and the service is always top-notch.",
-    author: "Marcus Johnson",
-    role: "Regular Customer",
-    avatar: "/images/reviews/review2.jpg",
+      "This moisturizer has become my go-to product. The hydration is phenomenal and my skin feels refreshed every single day.",
+    author: "Marcus Chloe",
+    role: "Beauty Expert",
+    avatar: "/testimonials-2.jpg",
     rating: 4,
   },
   {
     quote:
-      "I've tried every restaurant in the area, and Hotbite is hands down the best. Worth every visit.",
+      "I've tried every skincare brand in the area, and this one is hands down the best. Worth every purchase.",
     author: "Emily Rodriguez",
-    role: "Food Enthusiast",
-    avatar: "/images/reviews/review3.jpg",
+    role: "Dermatology Student",
+    avatar: "/testimonials-3.jpg",
     rating: 5,
   },
   {
     quote:
-      "The atmosphere is welcoming, the food is outstanding. These are the meals I recommend to everyone.",
-    author: "James Wilson",
-    role: "Local Reviewer",
-    avatar: "/images/reviews/review4.jpeg",
-    rating: 4,
-  },
+      "From the cleanser to the serum, everything in this collection is crafted with care and bursting with natural ingredients.",
+    author: "David Angela",
+    role: "Wellness Consultant",
+    avatar: "/testimonials-4.jpg",
+    rating: 5,
+  }
+  
 ];
 
 export default function Testimonials() {
@@ -59,7 +60,7 @@ export default function Testimonials() {
             >
               <path
                 d="M2 8C50 2 150 2 198 8"
-                stroke="#c22929"
+                stroke="#F1DECD"
                 strokeWidth="3"
                 strokeLinecap="round"
                 opacity="0.5"
@@ -89,7 +90,7 @@ export default function Testimonials() {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Join thousands of satisfied customers who love our food!
+          Join thousands of satisfied customers who love our products!
         </motion.p>
 
         {/* Review Cards */}
@@ -102,7 +103,7 @@ export default function Testimonials() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               whileHover={{ y: -5 }}
-              className="p-8 rounded-2xl bg-[#F8ECE2] border border-white/20 transition-all duration-300"
+              className="p-8 rounded-2xl bg-[#F1DECD] border border-white/20 transition-all duration-300"
             >
               {/* Stars */}
               <motion.div
