@@ -23,7 +23,7 @@ export default function Offers() {
   ];
 
   return (
-    <section className="bg-[#5D4B41] py-16 md:py-20">
+    <section id="#offers" className="bg-[#5D4B41] py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Title */}
         <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-12 md:mb-16 tracking-wider">

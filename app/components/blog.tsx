@@ -38,7 +38,7 @@ const blogPosts = [
 
 export default function Blog() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#F8ECE2]">
+    <section id="#blog" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#F8ECE2]">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div

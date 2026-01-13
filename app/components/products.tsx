@@ -57,7 +57,7 @@ export default function Products() {
     ];
 
     return (
-        <section className="bg-[#5D4B41] py-10 md:py-14">
+        <section id="#products" className="bg-[#5D4B41] py-10 md:py-14">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
                 {/* Section Title */}
                 <h2 className="font-playfair text-2xl md:text-3xl lg:text-4xl font-bold text-[#ffffff] text-center mb-8 md:mb-12 tracking-wide">

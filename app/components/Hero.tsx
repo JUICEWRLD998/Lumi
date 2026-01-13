@@ -13,7 +13,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="bg-[#F1DECD]">
+    <section id="#home" className="bg-[#F1DECD]">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-8 md:py-12">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
