@@ -4,49 +4,41 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { MessageCircle, Calendar } from "lucide-react";
 
-interface BlogPost {
-  id: string;
-  title: string;
-  date: string;
-  comments: number;
-  description: string;
-  image: string;
-  category?: string;
-}
 
-const blogPosts: BlogPost[] = [
+
+const blogPosts = [
   {
     id: "1",
-    title: "Skin Care advice from a surgeon",
-    date: "Apr 25, 2023",
-    comments: 5,
-    description: "We believe that the beauty is aenset risusvitae semper ullamcorpe tellus felis sollicitus.",
-    image: "/blog-1.jpg",
+    title: "The Science Behind Hydration: How to Lock in Moisture",
+    date: "Jan 10, 2026",
+    comments: 12,
+    description: "Discover the secrets to deeply hydrated skin. Learn about hyaluronic acid, ceramides, and the best practices for maintaining your skin's natural moisture barrier.",
+    image: "/blog-post.jpg",
     category: "Skincare",
   },
   {
     id: "2",
-    title: "Inner Beauty is the best beauty",
-    date: "Apr 25, 2023",
-    comments: 5,
-    description: "We believe that the beauty is aenset risusvitae semper ullamcorpe tellus felis sollicitus.",
-    image: "/blog-2.jpg",
+    title: "Natural Ingredients vs. Synthetics: What Really Works",
+    date: "Jan 8, 2026",
+    comments: 8,
+    description: "Explore the effectiveness of natural skincare ingredients and how they compare to scientifically formulated compounds. Get the truth about what actually benefits your skin.",
+    image: "/blog-post-2.jpg",
     category: "Wellness",
   },
   {
     id: "3",
-    title: "Skin Care advice from a surgeon",
-    date: "Apr 25, 2023",
-    comments: 5,
-    description: "We believe that the beauty is aenset risusvitae semper ullamcorpe tellus felis sollicitus.",
-    image: "/blog-3.jpg",
+    title: "Anti-Aging Strategies: Starting Your Routine in Your 20s",
+    date: "Jan 5, 2026",
+    comments: 15,
+    description: "Prevention is key to youthful skin. Learn which anti-aging ingredients to introduce early and how to build a skincare routine that will protect your skin for years to come.",
+    image: "/blog-post-3.jpg",
     category: "Tips",
   },
 ];
 
 export default function Blog() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FAFAFA]">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#F8ECE2]">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -56,10 +48,23 @@ export default function Blog() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1a1a1a] tracking-tight">
-            LATEST FROM BLOG
+          <h2 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-[#3a2a1a] relative inline-block pb-3">
+            LATEST BLOG
+            <svg
+              className="absolute -bottom-1 left-0 w-full"
+              viewBox="0 0 200 12"
+              fill="none"
+            >
+              <path
+                d="M2 8C50 2 150 2 198 8"
+                stroke="#5D4B41"
+                strokeWidth="3"
+                strokeLinecap="round"
+                opacity="0.5"
+              />
+            </svg>
           </h2>
-          <div className="w-16 h-1 bg-[#F1DECD] mx-auto mt-4"></div>
+          
         </motion.div>
 
         {/* Blog Cards Grid */}
@@ -72,7 +77,7 @@ export default function Blog() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
               whileHover={{ y: -8 }}
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+              className="bg-[#3a2a1a] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
             >
               {/* Image Container */}
               <div className="relative h-64 w-full overflow-hidden bg-gray-200">
@@ -87,31 +92,26 @@ export default function Blog() {
               {/* Content Container */}
               <div className="p-6">
                 {/* Meta Information */}
-                <div className="flex items-center gap-4 mb-4 text-sm text-gray-500">
+                <div className="flex items-center gap-4 mb-4 text-sm text-white">
                   <div className="flex items-center gap-1">
-                    <Calendar className="h-4 w-4" />
+                    <Calendar className="h-4 w-4 text-blue-700" />
                     <span>{post.date}</span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <MessageCircle className="h-4 w-4" />
+                    <MessageCircle className="h-4 w-4 text-red-500" />
                     <span>{post.comments} Comments</span>
                   </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2 hover:text-[#5D4B41] transition-colors cursor-pointer">
+                <h3 className="text-lg font-bold text-white mb-3 line-clamp-2 transition-colors cursor-pointer">
                   {post.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                <p className="text-white text-sm leading-relaxed mb-4 line-clamp-3">
                   {post.description}
                 </p>
-
-                {/* Read More Link */}
-                <button className="text-[#D4A574] font-semibold text-sm hover:text-[#5D4B41] transition-colors duration-300">
-                  Read More →
-                </button>
               </div>
             </motion.div>
           ))}

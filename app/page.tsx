@@ -7,6 +7,7 @@ import Products from './components/products';
 import Application from './components/application';
 import Testimonials from './components/testimonials';
 import Blog from './components/blog';
+import Footer from './components/footer';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Application />
       <Testimonials />
       <Blog />
+      <Footer />
     </main>
   );
 }
