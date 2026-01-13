@@ -1,12 +1,21 @@
+"use client";
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function AboutUs() {
   return (
-    <section id="#about" className="bg-[#F8ECE2] py-12 md:py-16">
+    <section id="about" className="bg-[#F8ECE2] py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Image */}
-          <div className="flex justify-center md:justify-start">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex justify-center md:justify-start"
+          >
             <div className="relative w-[300px] h-[300px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden border-4 border-[#d4a89a]">
               <Image
                 src="/about.jpg"
@@ -15,10 +24,16 @@ export default function AboutUs() {
                 className="object-cover object-center"
               />
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Content */}
-          <div className="space-y-5 md:space-y-6">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="space-y-5 md:space-y-6"
+          >
             <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#3a2a1a]">
               ABOUT US
             </h2>
@@ -26,9 +41,7 @@ export default function AboutUs() {
             <p className="font-inter text-sm md:text-base text-[#5a4a3a] leading-relaxed">
               Welcome to Lumi, Home-based organic skin care manufacturer, bringing you a range of high-quality skin care made from 100% organic ingredients. We believe in the power of nature to transform your skin, which is why all our products are lovingly crafted using only natural ingredients. With absolutely no added harmful chemical and parabens. We are committed to providing you with skincare that not only enhances your natural beauty, but also promotes overall well-being.
             </p>
-
-            
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -41,7 +41,7 @@ const reviews = [
 
 export default function Testimonials() {
   return (
-    <section id="#testimonials" className="py-20 bg-[#5D4B41] overflow-hidden scroll-mt-16">
+    <section id="testimonials" className="py-20 bg-[#5D4B41] overflow-hidden scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <motion.div

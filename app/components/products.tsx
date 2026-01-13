@@ -1,4 +1,7 @@
+"use client";
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function Products() {
     const products = [
@@ -57,17 +60,31 @@ export default function Products() {
     ];
 
     return (
-        <section id="#products" className="bg-[#5D4B41] py-10 md:py-14">
+        <section id="products" className="bg-[#5D4B41] py-10 md:py-14">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
                 {/* Section Title */}
-                <h2 className="font-playfair text-2xl md:text-3xl lg:text-4xl font-bold text-[#ffffff] text-center mb-8 md:mb-12 tracking-wide">
+                <motion.h2
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="font-playfair text-2xl md:text-3xl lg:text-4xl font-bold text-[#ffffff] text-center mb-8 md:mb-12 tracking-wide"
+                >
                     Top Selling Products
-                </h2>
+                </motion.h2>
 
                 {/* Products Grid */}
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
-                    {products.map((product) => (
-                        <div key={product.id} className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 group">
+                    {products.map((product, idx) => (
+                        <motion.div
+                            key={product.id}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: idx * 0.1 }}
+                            whileHover={{ y: -5 }}
+                            className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 group"
+                        >
                             {/* Product Image */}
                             <div className="relative w-full aspect-square overflow-hidden">
                                 <Image
@@ -92,7 +109,7 @@ export default function Products() {
                                     </button>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
                 </div>

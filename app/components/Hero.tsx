@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
   const [email, setEmail] = useState('');
@@ -13,11 +14,17 @@ export default function Hero() {
   };
 
   return (
-    <section id="#home" className="bg-[#F1DECD]">
+    <section id="home" className="bg-[#F1DECD]">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-8 md:py-12">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
-          <div className="space-y-5 md:space-y-6 order-2 md:order-1">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="space-y-5 md:space-y-6 order-2 md:order-1"
+          >
             <h1 className="font-playfair text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-[#3a2a1a] leading-tight">
               HOME BASED
               <br />
@@ -45,10 +52,16 @@ export default function Hero() {
                 Get Noticed
               </button>
             </form>
-          </div>
+          </motion.div>
 
           {/* Right Image */}
-          <div className="relative h-[400px] md:h-[450px] lg:h-[500px] w-full order-1 md:order-2">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative h-[400px] md:h-[450px] lg:h-[500px] w-full order-1 md:order-2"
+          >
             <Image
               src="/skincare.png"
               alt="Woman with beautiful skin"
@@ -56,7 +69,7 @@ export default function Hero() {
               className="object-cover object-center rounded-[40%] md:rounded-none md:object-contain"
               priority
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
